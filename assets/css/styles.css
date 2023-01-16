@@ -301,3 +301,16 @@ address {
 .search-submit:is(:hover, :focus) {
     color: var(--saffron);
 }
+
+/*==========Hero Hero==========*/
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+}
+.hero-banner {
+    width: 820px;
+    height: 716px;
+}
+.hero-img {
+    width: 700px;
+    height: 637px;
+}

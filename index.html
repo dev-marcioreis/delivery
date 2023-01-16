@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <!--========Favicon========-->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!--========Preload IMG========-->
+    <link rel="Preload" as="image" href="assets/images/hero-banner.png" media="min-width(768px)">
+    <link rel="Preload" as="image" href="assets/images/hero-banner-bg.png" media="min-width(768px)">
+    <link rel="Preload" as="image" href="assets/images/hero-bg.jpg">
     <!--========JavaScript========-->
     <script src="assets/js/main.js" defer></script>
     <title>Delivery</title>
@@ -66,6 +70,27 @@
         </div>
         <button class="search-close-btn" aria-label="Cancel search"><i class="uil uil-multiply"></i></button>
     </div>
+
+    <!--========Main========-->
+    <main>
+        <article>
+            <!--========Hero Home========-->
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-container">
+                        <p class="hero-subtitle">Comer faz bem</p>
+                        <h2 class="h2 hero-title">Os pratos mais gostosos</h2>
+                        <p class="hero-text">A comida mata a fome e alegra a alma</p>
+                        <button class="btn">Peça Agora</button>
+                    </div>
+                    <figure class="hero-banner">
+                        <img src="assets/images/hero-banner-bg.png" alt="Banner">
+                        <img src="assets/images/hero-banner.png" alt="Hamburger" class="w-100 hero-img">
+                    </figure>
+                </div>
+            </section>
+        </article>
+    </main>
 
 
 </body>
