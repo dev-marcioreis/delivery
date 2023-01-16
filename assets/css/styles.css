@@ -62,7 +62,7 @@ html {
     font-size: 10px;
 }
 body {
-    font-family: var(--principal-font);
+    font-family: var(--font);
     background: var(--white);
     color: var(--silver);
     line-height: 1.6;
