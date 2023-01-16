@@ -41,3 +41,4 @@ for(let i = 0; i < searchBoxElements.length; i++) {
     })
 }
 
+
