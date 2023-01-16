@@ -68,7 +68,6 @@ body {
     color: var(--silver);
     line-height: 1.6;
     overflow-x: hidden;
-    height: 300vh;
 }
 body.active {
     overflow: hidden;
@@ -131,13 +130,13 @@ address {
     left: 0;
     width: 100%;
     padding-block: -1px;
+    box-shadow: var(--shadow);
     z-index: 4;
 }
 .header.active {
     position: fixed;
     top: -86px;
     background: var(--light-orange);
-    box-shadow: var(--shadow);
     animation: slider .5s ease-out forwards;
 }
 
