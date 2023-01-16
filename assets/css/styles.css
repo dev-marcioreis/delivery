@@ -245,3 +245,59 @@ address {
 .navbar-link:is(:hover, :focus) {
     color: var(--dark-orange);
 }
+
+/*==========Search==========*/
+.search-container {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -60%;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: var(--light-orange);
+    padding-inline: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-2);
+    z-index: 5;
+}
+.search-container.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(50%);
+}
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+.search-input {
+    color: var(--dark-orange);
+    font-size: 2.8rem;
+    padding: 20px 15px;
+    padding-inline-end: 70px;
+}
+.search-input::placeholder {
+    color: var(--spanish);
+}
+.search-close-btn {
+    position: absolute;
+    display: none;
+    inset: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+.search-submit {
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    transform: translateY(-50%);
+    right: 15px;
+    color: var(--onyx);
+    transition: var(--transition-1);
+}
+.search-submit:is(:hover, :focus) {
+    color: var(--saffron);
+}
