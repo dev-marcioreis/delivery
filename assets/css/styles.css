@@ -136,6 +136,25 @@ address {
 .h4 {
     font-size: var(--fs-3);
 }
+.bot {
+    background: var(--dark-orange);
+    color: var(--white);
+    font-size: var(--fs-4);
+    font-weight: var(--fw-500);
+    height: 45px;
+    padding-inline: 35px;
+    border-radius: .5rem;
+    transition: var(--transition-1);
+}
+.bot-hover {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.bot:hover {
+    transform: scale(1.1);
+    background: var(--saffron);
+}
 
 /*==========Header==========*/
 .header-btn, .btn {
@@ -319,3 +338,43 @@ address {
     color: var(--saffron);
 }
 
+/*==========Hero Hero==========*/
+.hero {
+    background-image: url(../images/hero-bg.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-block: 145px 60px;
+}
+.hero-subtitle {
+    color: var(--champagne);
+    font-size: var(--fs-3);
+    letter-spacing: -1px;
+    margin-block-end: 25px;
+    text-transform: uppercase;
+}
+.hero-title {
+    color: var(--white);
+    max-width: 12ch;
+    margin-inline: auto;
+}
+.hero-text {
+    color: var(--sand);
+    margin-block: 15px 30px;
+    max-width: 44ch;
+    margin-inline: auto;
+    font-size: 1.5rem;
+}
+.hero .bot {
+    margin-inline: auto;
+}
+.hero-banner {
+    display: none;
+    width: 820px;
+    height: 716px;
+}
+.hero-img {
+    width: 700px;
+    height: 637px;
+}
