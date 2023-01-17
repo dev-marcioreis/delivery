@@ -43,7 +43,7 @@
     --silver: hwb(0 47% 53%);
     --saffron: hwb(32 18% 0%);
     --dark-orange: hwb(28 16% 0%);
-    --light-orange: hwb(28 16% 0% / 0.144);
+    --light-orange: hwb(28 16% 0% / 0.363);
     --sand: hwb(23 73% 9%);
     --isabelline: hwb(40 94% 2%);
     --gainsboro: hwb(0 87% 13%);
@@ -201,7 +201,7 @@ address {
 .logo {
     display: flex;
     align-items: center;
-    color: var(--dark-orange);
+    color: var(--black);
     font-size: 2.8rem;
     font-weight: var(--fw-700);
     letter-spacing: -2px;
@@ -377,4 +377,10 @@ address {
 .hero-img {
     width: 700px;
     height: 637px;
+}
+
+/*==========Promo==========*/
+.card-banner {
+    width: 300px;
+    height: 300px;
 }
