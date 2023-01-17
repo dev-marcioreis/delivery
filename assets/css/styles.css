@@ -248,7 +248,7 @@ address {
     top: 0;
     left: 0;
     width: 100%;
-    padding-block: -1px;
+    padding-block: 7px;
     box-shadow: var(--shadow-1);
     z-index: 4;
 }
@@ -276,10 +276,11 @@ address {
 
 
 /*==========Media Query==========*/
-@media (max-width: 1024px) {
-    .header {
-        padding-block: 7px;
+@media (min-width: 400px) {
+    body {
+        display: none;
     }
+
 }
 
 .header .container {
@@ -382,7 +383,7 @@ address {
     left: 0;
     width: 100%;
     height: 20%;
-    background: var(--dark-orange);
+    background: var(--white);
     padding-inline: 15px;
     visibility: hidden;
     opacity: 0;
