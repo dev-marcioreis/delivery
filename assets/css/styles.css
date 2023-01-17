@@ -249,13 +249,13 @@ address {
     left: 0;
     width: 100%;
     padding-block: -1px;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-1);
     z-index: 4;
 }
 .header.active {
     position: fixed;
     top: -86px;
-    background: var(--light-orange);
+    background: var(--white);
     animation: slider .5s ease-out forwards;
 }
 
@@ -432,9 +432,14 @@ address {
 .hero {
     text-align: center;
     padding-block: 145px 60px;
+    background: var(--dark-orange);
+    background-image: url('../images/hero-banner-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .hero-subtitle {
-    color: var(--dark-orange);
+    color: var(--white);
     font-size: var(--fs-3);
     letter-spacing: -1px;
     margin-block-end: 25px;
@@ -446,7 +451,7 @@ address {
     margin-inline: auto;
 }
 .hero-text {
-    color: var(--dark-orange);
+    color: var(--white);
     margin-block: 15px 30px;
     max-width: 44ch;
     margin-inline: auto;
@@ -454,16 +459,11 @@ address {
 }
 .hero .bot {
     margin-inline: auto;
+    background: var(--white);
+    color: var(--dark-orange);
+    font-weight: var(--fw-700);
 }
-.hero-banner {
-    display: none;
-    width: 820px;
-    height: 716px;
-}
-.hero-img {
-    width: 700px;
-    height: 637px;
-}
+
 
 /*==========Promo==========*/
 .promo-item {
