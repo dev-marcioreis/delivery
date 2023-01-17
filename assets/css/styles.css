@@ -411,7 +411,7 @@ address {
     color: var(--saffron);
 }
 
-/*==========Hero Home==========*/
+/*==========Hero==========*/
 .hero {
     text-align: center;
     padding-block: 145px 60px;
@@ -448,7 +448,7 @@ address {
     height: 637px;
 }
 
-/*==========Promo Home==========*/
+/*==========Promo==========*/
 .promo-item {
     min-width: 100%;
     scroll-snap-align: start;
@@ -503,7 +503,7 @@ address {
     aspect-ratio: 1 / 1;
 }
 
-/*==========About Home==========*/
+/*==========About==========*/
 .about {
     text-align: center;
 }
@@ -559,3 +559,5 @@ address {
     margin-block-start: 20px;
     margin-inline: auto;
 }
+
+/*==========Food==========*/
