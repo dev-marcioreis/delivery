@@ -478,3 +478,13 @@ address {
     margin-inline: auto;
     aspect-ratio: 1 / 1;
 }
+
+/*==========About Home==========*/
+.about-img {
+    width: 509px;
+    height: 459px;
+}
+.abs-img {
+    width: 216px;
+    height: 226px;
+}
