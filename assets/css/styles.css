@@ -341,7 +341,7 @@ address {
     left: 0;
     width: 100%;
     height: 20%;
-    background: var(--light-orange);
+    background: var(--dark-orange);
     padding-inline: 15px;
     visibility: hidden;
     opacity: 0;
@@ -359,13 +359,13 @@ address {
     max-width: 500px;
 }
 .search-input {
-    color: var(--dark-orange);
+    color: var(--rich-black-29);
     font-size: 2.2rem;
     padding: 20px 15px;
     padding-inline-end: 70px;
 }
 .search-input::placeholder {
-    color: var(--spanish);
+    color: var(--rich-black-29);
 }
 .search-close-btn {
     position: absolute;
@@ -387,7 +387,7 @@ address {
     color: var(--saffron);
 }
 
-/*==========Hero Hero==========*/
+/*==========Hero Home==========*/
 .hero {
     text-align: center;
     padding-block: 145px 60px;
@@ -424,7 +424,7 @@ address {
     height: 637px;
 }
 
-/*==========Promo==========*/
+/*==========Promo Home==========*/
 .promo-item {
     min-width: 100%;
     scroll-snap-align: start;
