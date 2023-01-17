@@ -108,7 +108,7 @@ address {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: var(--cultured);
+    background: var(--white);
 }
 ::-webkit-scrollbar-thumb {
     background: var(--saffron);
@@ -431,10 +431,9 @@ address {
 }
 .promo-card {
     position: relative;
-    background: var(--white);
+    background: var(--cultured);
     text-align: center;
     padding: 40px 38px;
-    border: 1px solid rgba(10, 10, 10, 0.096);
     box-shadow: 0 4px 8px hwb(180 4% 96% / 0.3);
     z-index: 1;
 }
