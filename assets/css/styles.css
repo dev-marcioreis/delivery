@@ -43,7 +43,7 @@
     --silver: hwb(0 47% 53%);
     --saffron: hwb(32 18% 0%);
     --dark-orange: hwb(28 16% 0%);
-    --light-orange: hwb(28 16% 0% / 0.363);
+    --light-orange: hwb(28 16% 0% / 0.705);
     --sand: hwb(23 73% 9%);
     --isabelline: hwb(40 94% 2%);
     --gainsboro: hwb(0 87% 13%);
@@ -154,6 +154,55 @@ address {
 .bot:hover {
     transform: scale(1.1);
     background: var(--saffron);
+}
+.section {
+    padding-block: var(--section-padding);
+}
+.section.white {
+    background: var(--white);
+}
+.section-divider {
+    position: relative;
+}
+.section-divider::before, .section-divider::after {
+    content: '';
+    position: absolute;
+    background-repeat: repeat no-repeat;
+    background-position: bottom;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+.section-divider.white::after {
+    background-image: url('../images/shape-white.png');
+}
+.section-divider.gray::after {
+    background-image: url('../images/shape-grey.png');
+}
+.w-100 {
+    width: 100%;
+}
+.has-scrollbar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 40px;
+}
+.has-scrollbar::-webkit-scrollbar {
+    height: 12px;
+}
+.has-scrollbar::-webkit-scrollbar-button {
+    width: calc(25% - 40px);
+}
+.has-scrollbar::-webkit-scrollbar-track {
+    outline: 2px solid var(--saffron);
+    border-radius: 50px;
+}
+.has-scrollbar::-webkit-scrollbar-thumb {
+    border: 3px solid var(--cultured);
+    border-radius: 50px;
 }
 
 /*==========Header==========*/
@@ -340,27 +389,23 @@ address {
 
 /*==========Hero Hero==========*/
 .hero {
-    background-image: url(../images/hero-bg.jpg);
     text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     padding-block: 145px 60px;
 }
 .hero-subtitle {
-    color: var(--champagne);
+    color: var(--dark-orange);
     font-size: var(--fs-3);
     letter-spacing: -1px;
     margin-block-end: 25px;
     text-transform: uppercase;
 }
 .hero-title {
-    color: var(--white);
+    color: var(--black);
     max-width: 12ch;
     margin-inline: auto;
 }
 .hero-text {
-    color: var(--sand);
+    color: var(--dark-orange);
     margin-block: 15px 30px;
     max-width: 44ch;
     margin-inline: auto;
@@ -380,7 +425,57 @@ address {
 }
 
 /*==========Promo==========*/
-.card-banner {
+.promo-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+.promo-card {
+    position: relative;
+    background: var(--white);
+    text-align: center;
+    padding: 40px 38px;
+    border: 1px solid rgba(10, 10, 10, 0.096);
+    box-shadow: 0 4px 8px hwb(180 4% 96% / 0.3);
+    z-index: 1;
+}
+.promo-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--light-orange);
+    clip-path: polygon(60% 0%, 100% 0%, 100% 100%, 0 100%);
+    transform: scaleY(0.3);
+    transform-origin: bottom;
+    transition: var(--transition-1);
+    z-index: -1;
+}
+.promo-card:hover::after {
+    clip-path: var(--clip-2);
+    transform: scaleY(1);
+}
+.promo-card .card-icon img {
+    margin-inline: auto;
+    filter: grayscale(1);
+}
+.promo-card:hover .card-icon {
+    filter: invert(1);
+}
+.promo-card .card-title {
+    margin-block: 15px;
+    transition: var(--transition-1);
+}
+.promo-card:hover :is(.card-title, .card-text) {
+    color: var(--white);
+}
+.promo-card .card-text {
+    font-size: 1.5rem;
+    margin-block-end: 15px;
+    transition: var(--transition-1);
+}
+.promo-card .card-banner {
     width: 300px;
     height: 300px;
+    max-width: max-content;
+    margin-inline: auto;
+    aspect-ratio: 1 / 1;
 }
