@@ -254,7 +254,7 @@ address {
 }
 .header.active {
     position: fixed;
-    top: -86px;
+    top: -103px;
     background: var(--white);
     animation: slider .5s ease-out forwards;
 }
@@ -273,16 +273,6 @@ address {
     display: inline-block;
     color: var(--dark-orange);
 }
-
-
-/*==========Media Query==========*/
-@media (min-width: 400px) {
-    body {
-        display: none;
-    }
-
-}
-
 .header .container {
     display: flex;
     justify-content: space-between;
@@ -682,4 +672,22 @@ address {
 }
 .food-menu-card .price {
     color: var(--saffron);
+}
+
+/*==========Blog==========*/
+
+
+
+
+
+
+
+
+
+/*==========Media Query==========*/
+@media (min-width: 550px) {
+    body {
+        display: none;
+    }
+
 }
