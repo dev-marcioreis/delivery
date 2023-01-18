@@ -758,6 +758,12 @@ address {
     letter-spacing: 10px;
 }
 
+/*==========Footer==========*/
+.footer {
+    background: var(--dark-orange);
+}
+
+
 /*==========Media Query==========*/
 @media (min-width: 550px) {
     body {
