@@ -759,10 +759,50 @@ address {
 }
 
 /*==========Footer==========*/
-.footer {
-    background: var(--dark-orange);
+.footer-top {
+    position: relative;
+    padding-block: 40px;
+    box-shadow: var(--shadow);
 }
-
+.footer-top .container {
+    display: grid;
+    gap: 39px;
+}
+.footer .logo {
+    color: var(--dark-orange);
+}
+.footer-text {
+    margin-block: 5px 25px;
+    font-size: 1.4rem;
+}
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+.social-link {
+    font-size: 2.5rem;
+    color: var(--saffron);
+    transition: var(--transition-1);
+}
+.social-link:hover {
+    transform: rotate(-5deg) scale(1.5);
+}
+.footer-list-title {
+    position: relative;
+    max-width: max-content;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+.footer-list-item {
+    font-size: 1.3rem;
+}
+.footer-bottom {
+    text-align: center;
+    margin-block-start: 40px;
+}
+.copy {
+    font-size: 1.3rem;
+}
 
 /*==========Media Query==========*/
 @media (min-width: 550px) {
