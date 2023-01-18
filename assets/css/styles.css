@@ -774,6 +774,8 @@ address {
 .footer-text {
     margin-block: 5px 25px;
     font-size: 1.4rem;
+    color: var(--black);
+    font-weight: var(--fw-700);
 }
 .footer-socials {
     display: flex;
