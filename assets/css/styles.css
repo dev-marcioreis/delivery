@@ -675,14 +675,88 @@ address {
 }
 
 /*==========Blog==========*/
-
-
-
-
-
-
-
-
+.blog {
+    text-align: center;
+}
+.blog .section-title {
+    margin-block: 10px 20px;
+}
+.blog .section-text {
+    margin-block-end: 40px;
+    max-width: 44ch;
+    margin-inline: auto;
+}
+.blog-list {
+    display: grid;
+    gap: 30px;
+}
+.blog-card {
+    border-radius: 2rem 2rem 0 0;
+    text-align: left;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-1);
+}
+.blog-card:hover {
+    transform: scale(1.01);
+}
+.blog-card .w-100 {
+    border-radius: 2rem 2rem 0 0;
+}
+.blog-card .card-content {
+    padding: 30px;
+}
+.blog-card .card-meta-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px 20px;
+}
+.blog-card .card-meta-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blog-card .card-meta-link i {
+    font-size: 1.5rem;
+    color: var(--tangerine);
+}
+.blog-card :is(.meta-info, .btn-link) {
+    color: var(--rich-black-29);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    text-transform: uppercase;
+    line-height: 1;
+    transition: var(--transition-1);
+}
+.blog-card .card-meta-link:is(:hover, :focus) .meta-info {
+    color: var(--saffron);
+}
+.blog-card .card-title {
+    font-size: var(--fs-3);
+    margin-block: 20px 15px;
+    transition: var(--transition-1);
+}
+.blog-card .card-title:is(:hover, :focus) {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+.blog-card .card-text {
+    margin-block-end: 20px;
+    font-size: 1.4rem;
+}
+.blog-card .btn-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.blog-card .btn-link i {
+    font-size: 2rem;
+}
+.blog-card .btn-link:is(:hover, :focus) {
+    color: var(--saffron);
+    letter-spacing: 10px;
+}
 
 /*==========Media Query==========*/
 @media (min-width: 550px) {
