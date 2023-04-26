@@ -6,7 +6,7 @@ Este projeto só terá a versão para mobile (celulares).
 
 ## 🚀 Finalizado.
 
-## 📋 Técnologias
+## 📋 Tecnologias
 HTML + CSS + JavaScipt
 
 ## ✒️ Autor
